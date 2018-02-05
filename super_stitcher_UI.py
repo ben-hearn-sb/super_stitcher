@@ -186,6 +186,7 @@ class Super_Stitcher(QtWidgets.QDialog):
                     print 'Did not append edge deq'
                     return
 
+            # TODO: Do not allow to go back and forth over the same edge
             prev = list(self.fDeq[0])
             curr = list(self.fDeq[1])
             matchingEdge = list(set(curr).intersection(prev))
